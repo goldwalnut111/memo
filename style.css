@@ -1,0 +1,29 @@
+body{
+    font-family:STKaiti ;
+    max-width: 600px;
+    /* 适应小屏幕 */
+    margin: 20px auto;
+    /* 上下20左右自动平分，居中 */
+}
+
+#searchbar,#newnote {
+    margin-bottom: 20px;
+}
+
+input,textarea{
+    width: 100%;
+    /* 让单行文本和多行文本框的宽度都撑满父容器，美观 */
+
+    margin-bottom:15px;
+    /* 每个文本输入框都有空隙 */
+
+    .note{
+        border: 1px solid pink;
+        margin-bottom: 10px;
+    }
+
+    button{
+        padding: 10px;
+        margin-top: 5px;
+    }
+}

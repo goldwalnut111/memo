@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>在线备忘录</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <h1>在线备忘录</h1>
+    <p>你的贴心小秘书</p>
+
+    <div id="searchbar">
+        <input type="text" id="search" placeholder="搜索标题或内容">
+        <input type="text" id="tag-filter" placeholder="按标签过滤">
+        <button onclick="loadNotes()">搜索/过滤</button>
+        <!-- html与js联动 -->
+    </div>
+
+<!-- 功能分区 -->
+
+    <div id="newnote">
+        <input type="text" id="title" placeholder="标题">
+        <textarea name="" id="content" placeholder="内容"></textarea>
+        <input type="text" name="" id="tags" placeholder="标签">
+        <button onclick="addNote()">新增笔记</button>
+        <button id="updatebtn" onclick="updateNote()" style="display: none;">保存</button>
+
+    </div>
+
+    <div id="notes"></div>
+
+    <script src="script.js"></script>
+</body>
+</html>
