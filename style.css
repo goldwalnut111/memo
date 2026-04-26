@@ -1,29 +1,105 @@
-body{
-    font-family:STKaiti ;
-    max-width: 600px;
-    /* 适应小屏幕 */
-    margin: 20px auto;
-    /* 上下20左右自动平分，居中 */
+body {
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Microsoft YaHei", sans-serif;
+    background: #ffffff;
+    margin: 0;
 }
 
-#searchbar,#newnote {
+.app {
+    max-width: 700px;
+    margin: 40px auto;
+}
+
+/* 标题 */
+h1 {
+    font-size: 26px;
+    margin-bottom: 25px;
+    color: #2f3437;
+}
+
+/* 面板 */
+.panel {
     margin-bottom: 20px;
 }
 
-input,textarea{
+/* 输入框 */
+input,
+textarea {
     width: 100%;
-    /* 让单行文本和多行文本框的宽度都撑满父容器，美观 */
+    border: none;
+    border-bottom: 1px solid #e5e5e5;
+    padding: 8px 4px;
+    font-size: 14px;
+    margin-bottom: 10px;
+    background: transparent;
+}
 
-    margin-bottom:15px;
-    /* 每个文本输入框都有空隙 */
+input:focus,
+textarea:focus {
+    outline: none;
+    border-bottom: 1px solid #2f3437;
+}
 
-    .note{
-        border: 1px solid pink;
-        margin-bottom: 10px;
+/* 按钮 */
+button {
+    background: transparent;
+    border: 1px solid #ddd;
+    padding: 6px 12px;
+    margin-right: 5px;
+    border-radius: 6px;
+    cursor: pointer;
+    font-size: 13px;
+}
+
+button:hover {
+    background: #f5f5f5;
+}
+
+/* 按钮区域 */
+.actions {
+    margin-top: 5px;
+}
+
+/* 笔记卡片 */
+.note {
+    padding: 12px 0;
+    border-bottom: 1px solid #eee;
+}
+
+/* 标题 */
+.note b {
+    font-size: 16px;
+    color: #2f3437;
+}
+
+/* 内容 */
+.note p {
+    margin: 6px 0;
+    color: #555;
+}
+
+/* 标签 */
+.note small {
+    color: #999;
+}
+
+/* hover */
+.note:hover {
+    background: #fafafa;
+}
+
+/* 动画 */
+.note {
+    animation: fadeIn 0.3s ease;
+}
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+        transform: translateY(8px);
     }
 
-    button{
-        padding: 10px;
-        margin-top: 5px;
+    to {
+        opacity: 1;
+        transform: translateY(0);
     }
 }
